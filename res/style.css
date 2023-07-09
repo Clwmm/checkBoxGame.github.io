@@ -27,13 +27,10 @@ body {
     transition: color 1s;
 }
 
-#bestCount, #moveCount, div.left, div.mid {
-    font-size: 1em;
-}
-
 #bestCount, #moveCount {
     color: var(--textcolor);
-    transition: color 1s;
+    transition: 1s;
+    font-size: 1rem;
 }
 
 div.nav {
@@ -61,9 +58,8 @@ div.mid {
     display: flex;
     margin: auto;
     color: var(--textcolor);
-    transition: color 1s;
+    transition: 1s;
     font-size: 1rem !important;
-    transition: font-size 1s;
 }
 
 div.right {
@@ -80,8 +76,7 @@ div.left {
     display: flex;
     margin: auto;
     color: var(--textcolor);
-    transition: color 1s;
-    transition: font-size 1s;
+    transition: 1s;
 }
 
 button.botEle {
@@ -159,9 +154,9 @@ input[type="checkbox"]:checked::after {
 #container {
     display: inline-block;
     position: relative;
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 1%;
 }
 
@@ -265,6 +260,22 @@ td:hover {
     }
 }
 
+@media (min-width: 1150px) {
+    #container {
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+}
+
+@media (min-width: 1150px) {
+    #container {
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+}
+
 @media (max-width: 780px) {
     .button-64 span {
         font-size: 0.3em;
@@ -285,6 +296,11 @@ td:hover {
     div.left, div.mid {
         font-size: 0.7rem !important;
     }
+
+    #bestCount, #moveCount {
+        font-size: 0.7rem !important;
+    }
+
     .button-64 span {
         font-size: 0.15em;
     }
