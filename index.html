@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="res/style.css">
+    <title>Check Box Game</title>
+    <link rel="icon" type="image/x-icon" href="res/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="left">
+            Best:&nbsp<div id="bestCount">0</div>
+        </div>
+
+        <div class="mid">
+            Moves:&nbsp<div id="moveCount">0</div>
+        </div>
+
+        <div class="right">
+            <input type="checkbox" id="changec" onclick="changeColorMode()">
+        </div>
+    </div>
+    
+
+    <div id="winId"><strong>You Won!</strong></div>
+
+    <div id="container">
+        <div id="dummy">
+            <div id="element">
+                <table>
+                    <tr>
+                        <td class="cell" id="1i" onclick="onclickBox('1i')"></td>
+                        <td class="cell" id="2i" onclick="onclickBox('2i')"></td>
+                        <td class="cell" id="3i" onclick="onclickBox('3i')"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell" id="4i" onclick="onclickBox('4i')"></td>
+                        <td class="cell" id="5i" onclick="onclickBox('5i')"></td>
+                        <td class="cell" id="6i" onclick="onclickBox('6i')"></td>
+                    </tr>
+                    <tr>
+                        <td class="cell" id="7i" onclick="onclickBox('7i')"></td>
+                        <td class="cell" id="8i" onclick="onclickBox('8i')"></td>
+                        <td class="cell" id="9i" onclick="onclickBox('9i')"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+
+    <button class="button-64" role="button" onclick="reset()"><span class="text">RESET</span></button>
+
+    <div class="navBot">
+        <button class="botEle" id="bot1" onclick="changeBoxColor('bot1')"></button>
+        <button class="botEle" id="bot2" onclick="changeBoxColor('bot2')"></button>
+        <button class="botEle" id="bot3" onclick="changeBoxColor('bot3')"></button>
+        <button class="botEle" id="bot4" onclick="changeBoxColor('bot4')"></button>
+        <button class="botEle" id="bot5" onclick="changeBoxColor('bot5')"></button>
+    </div>
+
+    <script src="res/script.js"></script>
+
+</body>
+
+</html>
