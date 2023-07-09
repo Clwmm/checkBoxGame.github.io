@@ -62,6 +62,8 @@ div.mid {
     margin: auto;
     color: var(--textcolor);
     transition: color 1s;
+    font-size: 1rem !important;
+    transition: font-size 1s;
 }
 
 div.right {
@@ -71,6 +73,7 @@ div.right {
 }
 
 div.left {
+    font-size: 1rem !important;
     width: 33.33%;
     text-align: left;
     justify-content: center;
@@ -78,6 +81,7 @@ div.left {
     margin: auto;
     color: var(--textcolor);
     transition: color 1s;
+    transition: font-size 1s;
 }
 
 button.botEle {
@@ -155,9 +159,9 @@ input[type="checkbox"]:checked::after {
 #container {
     display: inline-block;
     position: relative;
-    width: 30%;
-    margin-left: 30%;
-    margin-right: 30%;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
     margin-top: 1%;
 }
 
@@ -251,13 +255,13 @@ td:hover {
     }
 
     input[type="checkbox"] {
-        height: 1rem;
-        width: 1.75rem;
+        height: 1.5rem;
+        width: 2.625rem;
     }
 
     input[type="checkbox"]::after {
-        height: 0.8rem;
-        width: 0.8rem;
+        height: 1.2rem;
+        width: 1.2rem;
     }
 }
 
@@ -267,17 +271,20 @@ td:hover {
     }
 
     input[type="checkbox"] {
-        height: 0.5rem;
-        width: 0.875rem;
+        height: 0.9rem;
+        width: 1.575rem;
     }
 
     input[type="checkbox"]::after {
-        height: 0.4rem;
-        width: 0.4rem;
+        height: 0.72rem;
+        width: 0.72rem;
     }
 }
 
 @media (max-width: 510px) {
+    div.left, div.mid {
+        font-size: 0.7rem !important;
+    }
     .button-64 span {
         font-size: 0.15em;
     }
